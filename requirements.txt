@@ -1,0 +1,42 @@
+Objective:
+Create an Angular application that fetches data from a mock HTTP service, displays it in a list, and allows users to interact with the list items using forms and animations.
+
+Requirements:
+Implement a service called DataService that provides methods for fetching and managing mock data. This service should use Angular's HttpClient module to simulate HTTP requests.
+
+Create a component called ListComponent that displays the list of items fetched from the DataService. Each list item should contain a form with editable fields and an animation effect when hovered over.
+
+Implement reactive forms in the ListComponent to allow users to edit the fields of each list item. Use Angular's ReactiveFormsModule for form management.
+
+Utilize Angular animations to provide a smooth animation effect when hovering over each list item. The animation should scale the item slightly when hovered over.
+
+Ensure that changes made to the form fields are reflected in real-time and saved back to the mock data through the DataService.
+
+interface Item {
+  id: number;
+  name: string;
+  description: string;
+}
+
+const MOCK_DATA: Item[] = [
+  { id: 1, name: "Item 1", description: "Description for Item 1" },
+  { id: 2, name: "Item 2", description: "Description for Item 2" },
+  { id: 3, name: "Item 3", description: "Description for Item 3" },
+  { id: 4, name: "Item 4", description: "Description for Item 4" },
+  { id: 5, name: "Item 5", description: "Description for Item 5" }
+];
+
+
+Steps to Complete the Exercise:
+Set up a new Angular project using the Angular CLI (ng new my-app).
+Generate the DataService service and implement methods for fetching and managing mock data.
+Create the ListComponent component and implement the HTML template to display the list of items with editable forms and animation.
+Implement reactive forms in the ListComponent to enable editing of list item fields.
+Add Angular animations to provide the hover effect on list items.
+Ensure that changes made to the form fields are reflected in real-time and saved back to the mock data through the DataService.
+Test the application to ensure that it meets the requirements and functions correctly.
+Notes:
+Remember to import HttpClientModule in the AppModule to use Angular's HttpClient module.
+Use Angular CLI commands (ng generate service, ng generate component) to create new services and components.
+Refer to the official Angular documentation and tutorials for guidance on implementing reactive forms and animations if needed.
+Use Angular Material for styling and UI components if desired to enhance the visual appearance of the application.

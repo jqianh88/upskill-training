@@ -1,0 +1,7 @@
+<div *ngFor="let itemForm of itemForms; let i = index" @itemHover>
+    <form [formGroup]="itemForm" (ngSubmit)="updateItem(i)">
+      <input type="text" formControlName="name">
+      <textarea formControlName="description"></textarea>
+      <button type="submit">Save</button>
+    </form>
+  </div>
